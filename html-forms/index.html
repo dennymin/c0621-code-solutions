@@ -10,23 +10,17 @@
     <form action="index.html" method="post">
       <div><label for="email">Email</label></div>
       <input id="email" type="text" name="email">
-      </form>
 
-    <form action="index.html" method="post">
-      <div>Why is coding cool?</div>
-      <select name="reason">
-        <option id="select" value="default">Select an option</option>
-        <label>Select an option</label>
-        <option id="interesting" value="interesting">Because it's interesting</option>
-        <label>Because it's interesting</label>
-        <option id="fun" value="fun">Because it's fun</option>
-        <label>Because it's fun</label>
-        <option id="powerful" value="powerful">Because it's powerful</option>
-        <label>Because it's powerful</label>
-      </select>
-    </form>
+      <div>
+        <label for="drops">Why is coding cool?</label><br>
+        <select id="drops" name="reason">
+          <option id="select" value="default">Select an option</option>
+          <option id="interesting" value="interesting">Because it's interesting</option>
+          <option id="fun" value="fun">Because it's fun</option>
+          <option id="powerful" value="powerful">Because it's powerful</option>
+        </select>
+      </div>
 
-    <form action="index.html" method="post">
       <div>Favorite Language (choose one)</div>
         <input id="html" type="radio" name="language" value="HTML">
         <label for="html">HTML</label>
@@ -34,20 +28,14 @@
         <label for="css">CSS</label>
         <input id="javascript" type="radio" name="language" value="JavaScript">
         <label for="javascript">JavaScript</label>
-    </form>
 
-    <form action="index.html" method="post">
       <div>Would you like to sign up for more information?</div>
         <input id="signup" type="checkbox" name="service" value="yes">
-        <label for="signup">Sign me up!</label>
-    </form>
+        <label for="signup">Sign me up!</label><br>
 
-    <form action="index.html" method="post">
-      <div>Comments</div>
-        <textarea name="comments" cols="20" rows="8"></textarea>
-    </form>
+      <label for="comments">Comments</label><br>
+      <textarea id="comments" name="comments" cols="20" rows="8"></textarea><br>
 
-    <form action="index.html" method="post">
       <input id="submit" type="submit" name="submit" value="Submit">
     </form>
   </body>
