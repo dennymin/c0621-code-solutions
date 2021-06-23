@@ -1,0 +1,10 @@
+h1, h2 {
+  font-family: "Fredericka the Great", cursive, sans-serif;
+  font-size: 400%
+}
+
+p {
+  font-family: "Geo", monospace, sans-serif;
+  font-size: 200%;
+  line-height: 1.5em;
+}
