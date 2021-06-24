@@ -1,0 +1,27 @@
+body {
+  background-color: white;
+}
+
+h2 {
+  font-family: "Brandon Grotesque", monospace;
+  font-weight: bold;
+  color: rgb(255, 73, 27);
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.questionCategory {
+  text-transform: uppercase;
+  font-family: "Brandon Grotesque", sans-serif;
+}
+
+.choice {
+  padding-left: 10px;
+}
+
+input::placeholder {
+  font-family: "Brandon Grotesque", monospace;
+}
