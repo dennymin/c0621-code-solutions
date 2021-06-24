@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-third {
+  flex-basis: calc(100% / 3);
+}
+
+.column-fourth {
+  flex-basis: 25%;
+}
+
+.column60 {
+  flex-basis: 60%;
+}
+
+.column40 {
+  flex-basis: 40%;
+}
+
+img {
+  width: 100%;
+}
