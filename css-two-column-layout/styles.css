@@ -20,24 +20,29 @@ button {
   flex-basis: 100%;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 150%;
   font-weight: bold;
   letter-spacing: 0.1rem;
 }
 
+h1 {
+  margin-bottom: 0;
+}
+
 .main-header-description {
-  flex-basis: 70%;
+  flex-basis: 55%;
   text-align: center;
-  margin-top: -30px;
+  margin-top: 0;
   margin-bottom: 40px;
-  letter-spacing: -2%;
-  line-height: 120%;
 }
 
 .main-header-description,
 .caption {
-  line-height: 150%;
+  line-height: 175%;
   color: rgb(105, 105, 105);
+  letter-spacing: -50%;
+  font-size: small;
 }
 
 .row {
@@ -48,11 +53,11 @@ button {
 }
 
 .quadrant {
-  flex-basis: 50%;
+  flex-basis: 40%;
+  width: 40%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
 }
 
 .image {
@@ -62,9 +67,6 @@ button {
 
 img {
   width: 95%;
-  height: 95%;
-  position: relative;
-  bottom: 33%;
 }
 
 .text-content {
@@ -74,16 +76,22 @@ img {
 }
 
 .sub-header {
-  width: 15rem;
+  width: 12rem;
+  font-size: 75%;
+}
+
+h3 {
+  margin-bottom: 10px;
 }
 
 .caption {
-  margin-top: -20px;
-  margin-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  width: 90%;
 }
 
-.button {
-  margin: 30px;
+p {
+  margin-top: 0;
 }
 
 button {
