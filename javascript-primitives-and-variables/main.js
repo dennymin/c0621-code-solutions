@@ -1,0 +1,15 @@
+var fullName = 'Denny Min';
+var isCool = false;
+var totalPets = 1;
+console.log('full name is: ' + fullName);
+console.log('is he cool?: ' + isCool);
+console.log('he has ' + totalPets + ' pet(s)');
+console.log('fullName is type of: ' + typeof (fullName));
+console.log('isCool is type of: ' + typeof (isCool));
+console.log('totalPets is type of: ' + typeof (totalPets));
+var unknown = null;
+console.log('unknown has value of: ' + unknown);
+console.log('unknown is type of: ' + typeof (unknown));
+var never;
+console.log('never has value of: ' + never);
+console.log('never is type of: ' + typeof (never));
