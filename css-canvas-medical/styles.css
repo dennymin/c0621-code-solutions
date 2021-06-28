@@ -87,7 +87,11 @@
   background-color: #304464;
   border-radius: 3px;
   box-sizing: border-box;
-  padding: 10px 27px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  width: 9rem;
 }
 
 .canvas-logo > img {
@@ -96,16 +100,21 @@
 
 .hero {
   background: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("images/hero.jpg");
+  background-image: url("images/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-basis: 50%;
   margin: 50px;
   box-sizing: border-box;
+}
+
+.overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
 }
 
 .main-text-content {
