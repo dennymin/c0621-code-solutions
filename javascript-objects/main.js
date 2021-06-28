@@ -19,10 +19,10 @@ var vehicle = {
   year: '2020'
 };
 
-vehicle.color = 'dark gray';
-vehicle.isConvertible = false;
-console.log('value of color is: ' + vehicle.color);
-console.log('value of isConvertible is: ' + vehicle.isConvertible);
+vehicle['color'] = 'dark gray';
+vehicle['isConvertible'] = false;
+console.log('value of color is: ' + vehicle['color']);
+console.log('value of isConvertible is: ' + ['vehicle.isConvertible']);
 console.log('vehicle object properties and values: ', vehicle);
 
 var pet = {
