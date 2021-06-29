@@ -10,13 +10,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-basis: 100%;
+  flex-basis: 60%;
 }
 
-#header {
-  display: flex;
+.header {
   flex-wrap: nowrap;
-  flex-basis: 60%;
   justify-content: center;
   border-bottom: 0.5px solid #daeaff;
   padding: 20px 60px;
@@ -41,14 +39,6 @@
   color: white;
 }
 
-.darker-font:link,
-.darker-font:visited,
-.darker-font:active,
-.darker-font:hover {
-  text-decoration: none;
-  color: rgb(68, 68, 68);
-}
-
 .header-links {
   display: flex;
   flex-wrap: wrap;
@@ -64,6 +54,7 @@
   color: rgb(179, 179, 179);
   font-size: 90%;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .blue-button > a:link,
@@ -73,6 +64,7 @@
   background-color: #304464;
   color: rgb(223, 223, 223);
   border: 1px solid #304464;
+  text-decoration: none;
   border-radius: 3px;
 }
 
@@ -108,7 +100,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-basis: 50%;
+  flex-basis: 100%;
   margin: 50px;
   box-sizing: border-box;
 }
@@ -141,9 +133,8 @@
   padding-bottom: 20px;
 }
 
-#third-row {
+.third-row {
   background-color: rgb(247, 247, 247);
-  flex-basis: 60%;
   border-bottom: 0.5px solid rgb(228, 228, 228);
   color: rgb(110, 110, 110);
   padding: 45px;
@@ -188,12 +179,12 @@
   text-align: center;
 }
 
-#fourth-row {
+.fourth-row {
   padding: 20px;
 }
 
 .fourth-row-text {
-  flex-basis: 40%;
+  flex-basis: 70%;
   color: rgb(110, 110, 110);
 }
 
@@ -203,11 +194,9 @@
   align-items: center;
 }
 
-#fifth-row {
+.fifth-row {
   background-color: rgb(95, 92, 92);
   color: white;
-  display: flex;
-  flex-basis: 60%;
   justify-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -257,19 +246,18 @@
   font-size: large;
 }
 
-#footer {
-  display: flex;
-  flex-basis: 60%;
+.footer {
   justify-content: flex-start;
   background-color: rgb(247, 247, 247);
   color: rgb(68, 68, 68);
   padding: 45px 20px;
 }
 
-#footer > div {
+.footer > div {
   padding-left: 40px;
   position: relative;
-  left: 50px;
+  left: 40px;
+  color: rgb(68, 68, 68);
 }
 
 .tiempo {
