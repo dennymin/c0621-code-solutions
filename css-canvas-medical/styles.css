@@ -1,0 +1,265 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  font-family: avenir, monospace;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 60%;
+}
+
+.header {
+  flex-wrap: nowrap;
+  justify-content: center;
+  border-bottom: 0.5px solid #daeaff;
+  padding: 20px 60px;
+}
+
+.logo,
+.logo > a:link,
+.logo > a:visited,
+.logo > a:active,
+.logo > a:hover {
+  flex-basis: 55%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.link:link,
+.link:visited,
+.link:active,
+.link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.header-links {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 55%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header-links > a:link,
+.header-links > a:visited,
+.header-links > a:active,
+.header-links > a:hover {
+  color: rgb(179, 179, 179);
+  font-size: 90%;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.blue-button > a:link,
+.blue-button > a:visited,
+.blue-button > a:active,
+.blue-button > a:hover {
+  background-color: #304464;
+  color: rgb(223, 223, 223);
+  border: 1px solid #304464;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.contact-us {
+  background-color: #304464;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 5px 12px;
+}
+
+.get-started {
+  background-color: #304464;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  width: 9rem;
+}
+
+.canvas-logo > img {
+  width: 45%;
+}
+
+.hero {
+  background: white;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 100%;
+  margin: 50px;
+  box-sizing: border-box;
+}
+
+.overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+}
+
+.main-text-content {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.main-title,
+.main-title-paragraph {
+  color: white;
+  flex-basis: 100%;
+}
+
+.main-title > h1 {
+  font-weight: 400;
+  width: 21rem;
+}
+
+.main-title-paragraph > p {
+  width: 30rem;
+  line-height: 150%;
+  padding-bottom: 20px;
+}
+
+.third-row {
+  background-color: rgb(247, 247, 247);
+  border-bottom: 0.5px solid rgb(228, 228, 228);
+  color: rgb(110, 110, 110);
+  padding: 45px;
+}
+
+.third-row-upper-half {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.third-row-upper-half > h2,
+.third-row-upper-half > p {
+  flex-basis: 100%;
+  text-align: center;
+  font-weight: 400;
+}
+
+.third-row-upper-half > h2 {
+  flex-basis: 100%;
+  margin-bottom: 5px;
+}
+
+.third-row-upper-half > p {
+  flex-basis: 40%;
+  margin-bottom: 40px;
+  line-height: 170%;
+}
+
+.third-row-lower-half {
+  flex-basis: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+.location {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.fourth-row {
+  padding: 20px;
+}
+
+.fourth-row-text {
+  flex-basis: 70%;
+  color: rgb(110, 110, 110);
+}
+
+.fourth-row-button {
+  flex-basis: 8%;
+  display: flex;
+  align-items: center;
+}
+
+.fifth-row {
+  background-color: rgb(95, 92, 92);
+  color: white;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.fifth-row-segment-main {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fifth-row-segment-main-image {
+  flex-basis: 100%;
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.fifth-row-segment-main-image > img {
+  width: 20%;
+  height: auto;
+}
+
+.fifth-row-segment-main > p {
+  font-size: small;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 150%;
+}
+
+.fifth-row-segment {
+  flex-basis: 15%;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.fifth-row-segment > div {
+  flex-basis: 100%;
+  line-height: 200%;
+}
+
+.bigger {
+  font-size: large;
+}
+
+.footer {
+  justify-content: flex-start;
+  background-color: rgb(247, 247, 247);
+  color: rgb(68, 68, 68);
+  padding: 45px 20px;
+}
+
+.footer > div {
+  padding-left: 40px;
+  position: relative;
+  left: 40px;
+  color: rgb(68, 68, 68);
+}
+
+.tiempo {
+  font-family: "tiempos headline", monospace;
+}
