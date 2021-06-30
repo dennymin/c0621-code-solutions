@@ -1,0 +1,48 @@
+* {
+  background-color: #f7f8fa;
+}
+
+.container,
+.row,
+.column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: barlow, monospace;
+}
+
+.container {
+  width: 100%;
+}
+
+.row {
+  flex-basis: 100%;
+}
+
+.column {
+  flex-basis: 25%;
+  margin: 0;
+  padding: 0;
+}
+
+.big {
+  width: 85%;
+  height: auto;
+}
+
+.small {
+  width: 20%;
+  height: auto;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: 900;
+}
+
+p {
+  font-weight: medium;
+}
