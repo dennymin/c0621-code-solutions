@@ -20,7 +20,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .column {
@@ -28,16 +28,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-end;
-  align-content: flex-end;
 }
 
 img {
-  max-height: 360px;
-  max-width: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  align-self: flex-end;
+  height: 400px;
+  width: 95%;
+  object-position: contain;
 }
 
 .label,
@@ -46,24 +42,24 @@ img {
 .old-price {
   display: flex;
   justify-content: flex-start;
-  margin-left: 10px;
 }
 
 .label {
   font-weight: bold;
   padding-right: 5px;
-  border-right: 2px solid gray;
+  border-right: 2px solid rgb(206, 206, 206);
 }
 
 .size {
-  color: gray;
+  color: rgb(206, 206, 206);
+  margin-left: 5px;
 }
 
 .current-price {
-  background-color: pink;
+  background-color: rgb(255, 242, 233);
 }
 
 .old-price {
-  color: gray;
+  color: rgb(206, 206, 206);
   text-decoration: line-through;
 }
