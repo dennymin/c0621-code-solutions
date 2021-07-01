@@ -1,0 +1,65 @@
+* {
+  font-family: 'DM Sans', monospace;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.row {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.text-row {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.column {
+  flex-basis: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img {
+  height: 400px;
+  width: 95%;
+  object-position: contain;
+}
+
+.label,
+.size,
+.current-price,
+.old-price {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.label {
+  font-weight: bold;
+  padding-right: 5px;
+  border-right: 2px solid rgb(206, 206, 206);
+}
+
+.size {
+  color: rgb(206, 206, 206);
+  margin-left: 5px;
+}
+
+.current-price {
+  background-color: rgb(255, 242, 233);
+}
+
+.old-price {
+  color: rgb(206, 206, 206);
+  text-decoration: line-through;
+}
