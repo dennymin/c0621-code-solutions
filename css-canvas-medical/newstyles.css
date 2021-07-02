@@ -8,10 +8,41 @@
 }
 
 .row {
+  flex-basis: 100%;
+}
+
+.column-50 {
+  flex-basis: 50%;
+}
+
+.column-25 {
+  flex-basis: 25%;
+}
+
+.left-align {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.right-align {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.center-align {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-basis: 100%;
+  text-align: center;
+}
+
+.space-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .light-grey-font,
@@ -63,33 +94,6 @@
 
 .tiempo {
   font-family: "tiempos headline", monospace;
-}
-
-.column-full {
-  flex-basis: 100%;
-}
-
-.column-50 {
-  flex-basis: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.column-25 {
-  flex-basis: 25%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.left-side-align {
-  flex-basis: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
 }
 
 .header-line {
