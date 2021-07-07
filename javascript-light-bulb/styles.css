@@ -1,0 +1,36 @@
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbulb {
+  border: 1px hidden;
+  border-radius: 200px;
+  width: 200px;
+  height: 200px;
+  margin-top: 100%;
+}
+
+.background-light {
+  background-color: rgb(255, 252, 236);
+}
+
+.background-dark {
+  background-color: rgb(17, 17, 17);
+}
+
+.lightbulb-light {
+  background-color: rgb(250, 234, 132);
+  box-shadow: 0 0 5px 10px rgb(255, 249, 210);
+  color: rgb(255, 252, 236);
+}
+
+.lightbulb-dark {
+  background-color: rgb(37, 37, 37);
+  box-shadow: 0 0 5px 10px black;
+}
+
+button {
+  width: 100%;
+}
