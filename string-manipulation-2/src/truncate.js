@@ -6,9 +6,7 @@ function truncate(length, string) {
       cut += string[i];
     }
   } else {
-    for (var j = 0; j < string.length; j++) {
-      cut += string[j];
-    }
+    cut = string;
   }
   cut += '...';
   return cut;

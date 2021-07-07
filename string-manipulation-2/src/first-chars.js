@@ -6,9 +6,7 @@ function firstChars(length, string) {
       shortened += string[i];
     }
   } else {
-    for (var j = 0; j < string.length; j++) {
-      shortened += string[j];
-    }
+    shortened = string;
   }
   return shortened;
 }
