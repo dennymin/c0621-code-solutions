@@ -1,0 +1,53 @@
+* {
+  font-family: sans-serif, monospace;
+}
+
+.container {
+  display: flex;
+}
+
+.row {
+  flex-basis: 100%;
+}
+
+button {
+  width: auto;
+  padding: 10px 30px;
+  color: white;
+  border: 1px hidden;
+  border-radius: 5px;
+  box-shadow: 1px 3px 3px 1px rgb(102, 102, 102);
+  font-size: x-large;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+  text-transform: uppercase;
+}
+
+.modal-hidden {
+  display: none;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px 5px;
+  border: 1px hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 100px;
+  left: 500px;
+  background-color: white;
+}
+
+h2 {
+  font-weight: 700;
+}
