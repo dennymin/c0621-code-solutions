@@ -18,7 +18,7 @@ function isAnagram(firstString, secondString) {
     for (var y = 0; y < string2.length; y++) {
       if (string1[x] === string2[y]) {
         anagram = anagram.replace(string1[x], '');
-        y = string2.length;
+        break;
       }
     }
   }
