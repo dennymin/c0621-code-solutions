@@ -6,7 +6,7 @@ function drop(array, count) {
       newArray.push(array[i]);
     }
   } else {
-    return array;
+    return [];
   }
   return newArray;
 }
