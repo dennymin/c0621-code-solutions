@@ -11,7 +11,8 @@ var $statsInfo = document.querySelector('.statistics');
 var totalInputs = 0;
 
 function compare(event) {
-  if (lineIndex === $spanElements.length) {
+  if (lineIndex === $spanElements.length - 1 && event.key === textString[lineIndex]) {
+    $spanElements[lineIndex].className = 'correct';
     $statsInfo.className = 'statistics';
     var accuracy = lineIndex / totalInputs;
     $statsInfo.textContent = 'Accuracy: ' + accuracy * 100 + '%';
@@ -22,7 +23,7 @@ function compare(event) {
       $spanElements[lineIndex].className = 'correct';
       totalInputs++;
       lineIndex++;
-      if (lineIndex <= $spanElements.length) {
+      if (lineIndex < $spanElements.length) {
         $spanElements[lineIndex].className = 'current';
       }
     } else if (event.key !== textString[lineIndex]) {

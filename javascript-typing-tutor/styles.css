@@ -15,8 +15,14 @@
   flex-basis: 100%;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .current {
-  text-decoration: underline;
+  border-bottom: 3px solid black;
 }
 
 .correct {
@@ -25,6 +31,14 @@
 
 .incorrect {
   color: red;
+  border-bottom-color: red;
+}
+
+span {
+  box-sizing: border-box;
+  min-width: 1.2rem;
+  height: 45px;
+  padding-bottom: 5px;
 }
 
 .hidden {
