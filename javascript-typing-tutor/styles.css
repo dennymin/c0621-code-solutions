@@ -1,0 +1,32 @@
+* {
+  font-family: monospace, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.row {
+  flex-basis: 100%;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+.correct {
+  color: rgb(46, 211, 60);
+}
+
+.incorrect {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
