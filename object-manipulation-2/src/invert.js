@@ -2,7 +2,6 @@
 function invert(source) {
   var newObj = {};
   for (var keys in source) {
-    newObj[source[keys]] = source[keys];
     newObj[source[keys]] = keys;
   }
   return newObj;
