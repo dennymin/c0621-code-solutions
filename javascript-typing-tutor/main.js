@@ -13,9 +13,26 @@ var totalInputs = 0;
 function compare(event) {
   if (lineIndex === $spanElements.length - 1 && event.key === textString[lineIndex]) {
     $spanElements[lineIndex].className = 'correct';
+    // statistics portion
     $statsInfo.className = 'statistics';
     var accuracy = lineIndex / totalInputs;
-    $statsInfo.textContent = 'Accuracy: ' + accuracy * 100 + '%';
+    var accuracyInfo = document.createElement('h2');
+    var accuracyInfoText = document.createTextNode('Accuracy: ' + accuracy * 100 + '%');
+    $statsInfo.appendChild(accuracyInfo.appendChild(accuracyInfoText));
+    $statsInfo.className = 'row statistics';
+    // try again portion
+    var tryAgain = document.createElement('div');
+    var tryAgainQuestion = document.createElement('p');
+    var tryAgainQuestionText = document.createTextNode('Try Again?');
+    var tryAgainForm = document.createElement('form');
+    var tryAgainButton = document.createElement('button');
+    tryAgainButton.textContent = 'Yes';
+    tryAgainQuestion.appendChild(tryAgainQuestionText);
+    tryAgain.appendChild(tryAgainQuestion);
+    tryAgainForm.appendChild(tryAgainButton);
+    tryAgain.appendChild(tryAgainForm);
+    tryAgainButton.className = 'choice-button';
+    $statsInfo.appendChild(tryAgain);
     return;
   }
   if (lineIndex <= $spanElements.length) {

@@ -13,10 +13,13 @@
 
 .row {
   flex-basis: 100%;
+  height: 50%;
 }
 
 .center {
+  padding-top: 100px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
 }
@@ -43,4 +46,21 @@ span {
 
 .hidden {
   display: none;
+}
+
+.choice-button {
+  box-sizing: border-box;
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: chartreuse;
+  color: black;
+  font-weight: bolder;
+  font-size: larger;
+  transition: all 2s;
+}
+
+.choice-button:hover {
+  background-color: cornflowerblue;
+  transform: scale(1.5);
 }
