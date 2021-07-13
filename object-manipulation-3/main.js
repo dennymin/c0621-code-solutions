@@ -87,15 +87,7 @@ function calculateScore(player) {
     King: 10,
     Ace: 11
   };
-  var playerScore = 0;
-  for (var playerCards = 0; playerCards < 2; playerCards++) {
-    for (var playerScores in scores) {
-      if (player.hand[playerCards].rank === playerScores) {
-        playerScore += scores[playerScores];
-      }
-    }
-  }
-  return playerScore;
+  return scores[player.hand[0].rank] + scores[player.hand[1].rank];
 }
 
 // i want to incorporate all my functions together now to create the game
