@@ -2,6 +2,7 @@ var $picturesList = document.querySelectorAll('.image-container > img');
 var $pictureTrackerList = document.querySelectorAll('.picture-tracker > i');
 var $pictureTracker = document.querySelector('.picture-tracker');
 var $pLIndex = 0;
+var timer = null;
 
 var $leftButton = document.querySelector('.fa-chevron-left');
 var $rightButton = document.querySelector('.fa-chevron-right');
@@ -54,7 +55,7 @@ function carouselTransition() {
     reveal($picturesList[$pLIndex], $pictureTrackerList[$pLIndex]);
   }
 }
-var timer = setInterval(carouselTransition, 3000);
+timer = setInterval(carouselTransition, 3000);
 
 $leftButton.addEventListener('click', leftButtonClick);
 $rightButton.addEventListener('click', rightButtonClick);
