@@ -62,7 +62,7 @@ $rightButton.addEventListener('click', rightButtonClick);
 
 function directSwitch(event) {
   if (event.target && event.target.nodeName === 'I') {
-    var targetPicNumber = event.target.getAttribute('value');
+    var targetPicNumber = Number(event.target.getAttribute('value'));
     hide($picturesList[$pLIndex], $pictureTrackerList[$pLIndex]);
     $pLIndex = targetPicNumber;
     reveal($picturesList[$pLIndex], $pictureTrackerList[$pLIndex]);
