@@ -1,0 +1,46 @@
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.button-container {
+  flex-basis: 5%;
+}
+
+.button-details {
+  border: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 7rem;
+}
+
+.fa-circle {
+  margin: 20px 10px;
+  color: black;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
