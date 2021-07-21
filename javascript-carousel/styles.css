@@ -44,3 +44,13 @@
 .hidden {
   display: none;
 }
+
+.image-container {
+  height: 400px;
+}
+
+.image-container > img {
+  height: 400px;
+  width: auto;
+  object-position: center;
+}
