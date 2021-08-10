@@ -1,0 +1,556 @@
+    1  git config --global user.name "Denny Min"
+    2  git config --global user.email "denden223@gmail.com"
+    3  git configt --global --list
+    4  git config --global --list
+    5  pwd
+    6  cd ~/repos/c0621-code-solutions
+    7  cd http-messages
+    8  http http://example.com
+    9  http --verbose http://example.com
+   10  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+   11  http --body GET https://example.com > index.html
+   12  git status
+   13  pwd
+   14  cd ~/repos/c0621-code-solutions
+   15  cd http-messages
+   16  pwd
+   17  git branch http-messages
+   18  git branch --list
+   19  git switch http-messages
+   20  http https://example.com
+   21  http --verbose https://example.com
+   22  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+   23  http --body GET https://example.com > index.html
+   24  git status
+   25  git add http-messages
+   26  pwd
+   27  ./
+   28  git status
+   29  git add ./
+   30  git status
+   31  git commit -m "Completed http-messages exercise. - Denny Min"
+   32  git push origin http-messages
+   33  git switch master
+   34  git pull origin master
+   35  https://api.openweathermap.org/data/2.5/weather?q=Irvine&units=imperial&appid=1d5d386492055b16d553250c2e5d2999
+   36  cd ~/desktop/
+   37  cd ~/mnt/c/Users/dende/OneDrive/Desktop/practice javascript
+   38  cd ~/repos/c0621-code-solutions/http-messages
+   39  http https://api.openweathermap.org/data/2.5/weather?q=Irvine&units=imperial&appid=1d5d386492055b16d553250c2e5d2999
+   40  http https://api.openweathermap.org/data/2.5/weather?q=Irvine&units=imperial&appid=1d5d386492055b16d553250c2e5d299http https://api.openweathermap.org/data/2.5/weather?q=Irvine&units=imperial&appid=1d5d386492055b16d553250c2e5d2999
+   41  http https://api.openweathermap.org/data/2.5/weather?q=Irvine&units=imperial&appid=1d5d386492055b16d553250c2e5d2999
+   42  http --verbose https://api.openweathermap.org/data/2.5/weather?q=Irvine&units=imperial&appid=1d5d386492055b16d553250c2e5d2999
+   43  http https://api.openweathermap.org/data/2.5/weather?q=Irvine&units=imperial&appid=1d5d386492055b16d553250c2e5d2999
+   44  http --body GET https://api.openweathermap.org/data/2.5/weather?q=Irvine&units=imperial&appid=1d5d386492055b16d553250c2e5d2999
+   45  http https://api.openweathermap.org/data/2.5/weather?q=Irvine&units=imperial&appid=1d5d386492055b16d553250c2e5d2999
+   46  http --verbose https://api.openweathermap.org/data/2.5/weather?q=Irvine&units=imperial&appid=1d5d386492055b16d553250c2e5d2999
+   47  http https://api.openweathermap.org/data/2.5/weather?q=Irvine&units=imperial&appid=1d5d386492055b16d553250c2e5d2999
+   48  http https://pokeapi.co/api/v2/pokemon/bulbasaur
+   49  http https://pokeapi.co/api/v2/pokemon/goodra
+   50  http https://api.openweathermap.org/data/2.5/weather?q=Irvine&units=imperial&appid=ea53d3f85461dc36f6f6ec5c9722353e
+   51  cd ~/repos
+   52  git clone git@github.com:dennymin/ajax-project.git
+   53  cd ajax-project
+   54  npm ci
+   55  git status
+   56  git branch issue-1-user-can-select-location
+   57  git status
+   58  git add ajax-project
+   59  git add .
+   60  git status
+   61  git commit -m "Added images to images folder, set up background and modal for asking the first question of where the user wants to check information for. Added functionality to the submit button as well so that it saves an entry in the data model. #1"
+   62  git status
+   63  git branch --list
+   64  git switch issue-1-user-can-select-location
+   65  git switch master
+   66  git status
+   67  git fetch origin
+   68  git reset --hard origin/master
+   69  git status
+   70  git branch --list
+   71  git switch issue-1-user-can-select-location
+   72  git status
+   73  git add .
+   74  git status
+   75  git commit -m "Added images to images folder, set up background and modal for asking the first question of where the user wants to check information for. Added functionality to the submit button as well so that it saves an entry in the data model. #1"
+   76  git status
+   77  git push origin issue-1-user-can-select-location
+   78  git status
+   79  git add js/data.js
+   80  git commit -m "Removed unnecessary variable from data model. #1"
+   81  git push origin issue-1-user-can-select-location
+   82  git status
+   83  git add css/styles.css
+   84  git commit -m "Changed size of search bar. #1"
+   85  git push origin issue-1-user-can-select-location
+   86  git status
+   87  git add js/main.js
+   88  git commit -m "Changed submission value from undefined to ''. #1"
+   89  git push origin issue-1-user-can-select-location
+   90  git status
+   91  git switch master
+   92  git pull origin master
+   93  git branch issue-2-user-can-select-what-information-they-want-to-see
+   94  git status
+   95  git branch --list
+   96  git switch issue-2-user-can-select-what-information-they-want-to-see
+   97  git status
+   98  git add css/styles.css index.html js/data.js js/main.js
+   99  git status
+  100  git commit -m "Added a second page that shows up when you submit a location that you want to see. A list with the available data is shown. The circles will change depending on if you click them or not. #2"
+  101  git status
+  102  git add css/styles.css index.html js/main.js
+  103  git status
+  104  git commit -m "Added functionality so that when an option is clicked, it will update values in the data model so that it knows to pull the right data. Also added a submit button. #2"
+  105  git commit -m "Added functionality so that when an option is clicked, it will update values in the data model so that it knows to pull the right data. Also added a submit button. #2" --no-verify
+  106  git status
+  107  git add js/main.js
+  108  git status
+  109  git commit -m "Removed console.logs #2"
+  110  git push origin issue-2-user-can-select-what-information-they-want-to-see
+  111  git status
+  112  cd ~/repos/ajax-project
+  113  git status
+  114  git add index.html js/main.js
+  115  git status
+  116  git commit -m "Cleaned up data so that instead of pushing a new object after the initial question is asked, an object is pushed after the choices are filled out. #2"
+  117  git add js/main.js
+  118  git status
+  119  git commit -m "Cleaned up data so that instead of pushing a new object after the initial question is asked, an object is pushed after the choices are filled out. #2"
+  120  git status
+  121  git add js/main.js
+  122  git commit -m "Implemented weather API so that the search will check for valid locations. #2"
+  123  git status
+  124  git add css/styles.css index.html js/main.js
+  125  git status
+  126  git commit -m "Made an error message for the app to show up if the location was not found. #2"
+  127  git status
+  128  git add css/styles.css js/main.js
+  129  git status
+  130  git commit -m "Removed console logs and css that was not being used. #2"
+  131  git push origin issue-2-user-can-select-what-information-they-want-to-see
+  132  git status
+  133  git add js/data.js js/main.js
+  134  git status
+  135  git commit -m "Modified data model to include a template object that will be filled out and then pushed into the locations array. It then gets reset so that it can be used again. #2"
+  136  git push origin issue-2-user-can-select-what-information-they-want-to-see
+  137  git status
+  138  git add js/data.js js/main.js
+  139  git commit -m "Camelcased variables and properties. #2"
+  140  git push origin issue-2-user-can-select-what-information-they-want-to-see
+  141  git status
+  142  git switch master
+  143  git pull origin master
+  144  git branch issue-3-user-can-see-background-and-information
+  145  git branch --list
+  146  git switch issue-3-user-can-see-background-and-information
+  147  git status
+  148  git add css/styles.css index.html js/main.js
+  149  git status
+  150  git commit -m "Made changes to CSS so that certain things could be reusable. Made template for how I want my main weather display to show up. Added a toggle function for making certain views hidden. #3"
+  151  git status
+  152  git add index.html js/main.js
+  153  git status
+  154  git commit -m "Added a function that will upload the data from a weather object to the DOM. It will also remove the categories that were not requested by the data. #3"
+  155  git status
+  156  git add js/main.js
+  157  git status
+  158  git commit -m "Added a function that will upload the data from a weather object to the DOM. It will also remove the categories that were not requested by the data. #3"
+  159  git status
+  160  git add index.html js/data.js js/main.js
+  161  git status
+  162  git commit -m "Working with time functions. #3" --no-verify
+  163  git status
+  164  git push origin issue-3-user-can-see-background-and-information
+  165  cd ~/repos/ajax-project
+  166  git status
+  167  git add js/main.js
+  168  git status
+  169  git commit -m "Made all the time displays account for time zones. #3"
+  170  git status
+  171  git add js/main.js
+  172  git status
+  173  git commit -m "Changed display time to include date as well as country. Made sure that sunset and sunrise were only hour and minutes. Changed the time conversion so that it would change time accordingly so that it would not calculate time based off of the timezone here in California. #3"
+  174  git commit -m "Changed display time to include date as well as country. Made sure that sunset and sunrise were only hour and minutes. Changed the time conversion so that it would change time accordingly so that it would not calculate time based off of the timezone here in California. #3" --no-verify
+  175  git status
+  176  git add ajax-project
+  177  git add css/styles.css index.html js/main.js
+  178  git status
+  179  git commit -m "Added two functions to help change the background image depending on the time and weather. #3"
+  180  git push origin issue-3-user-can-see-background-and-information
+  181  git status
+  182  git add css/styles.css index.html js/data.js js/main.js
+  183  git status
+  184  git commit -m "Made changes to javascript so that by default, all weather choices are selected and will be displayed. Typically, users will probably want more information rather than less information, so starting them all true makes it quicker and more intuitive to use. Also changed some css and html to add a text shadow to some of the list items for better visibility. Also changed backdrop so that text would be more visible. Also modified the time so that the seconds were no longer displayed. Lastly, made it so that in the mobile version, the main header texts would be displayed centrally, as I feel this looks better. #3"
+  185  git status
+  186  git add css/styles.css index.html js/main.js
+  187  git status
+  188  git commit -m "Removed comments and unnecessary steps. Changed Javascript so that a new objet would be created and then pushed into data.locations rather than references to data.template. #3"
+  189  git push origin issue-3-user-can-see-background-and-information
+  190  git status
+  191  git switch master
+  192  git pull origin master
+  193  git status
+  194  git restore css/styles.css index.html
+  195  git status
+  196  git restore css/styles.css
+  197  git status
+  198  git branch issue-4-user-can-save-locations-and-set-primary
+  199  git branch --list
+  200  git switch issue-4-user-can-save-locations-and-set-primary 
+  201  git status
+  202  git add css/styles.css index.html js/main.js
+  203  git status
+  204  git commit -m "Made buttons more reusable. Changed my JavaScript so that it text would update as a whole rather than being concatenated. #4"
+  205  git status
+  206  git add css/styles.css index.html
+  207  git status
+  208  git commit -m "Added a header that is incomplete. #4"
+  209  git push origin issue-4-user-can-save-locations-and-set-primary 
+  210  git status
+  211  cd ~/repos/ajax-project
+  212  git status
+  213  git add css/styles.css index.html
+  214  git status
+  215  git commit -m "Cleaned up the header banner and created the dimensions and first look of the modal that will display a preview of the locations. #4"
+  216  git push origin issue-4-user-can-save-locations-and-set-primary 
+  217  git status
+  218  git add css/styles.css index.html js/main.js
+  219  git status
+  220  git commit -m "Added functionality to the hamburger menu. #4"
+  221  git push origin issue-4
+  222  git push origin issue-4-user-can-save-locations-and-set-primary 
+  223  git status
+  224  git add .
+  225  git status
+  226  git commit -m "Added smoother functionality so that when the hamburger menu icon is clicked while locations modal is up, everything closes. #4"
+  227  git status
+  228  git add .
+  229  git status
+  230  git commit -m "Made changes to the list items in the edit locations modal. #4"
+  231  git push origin issue-4-user-can-save-locations-and-set-primary 
+  232  git status
+  233  git add index.html js/main.js
+  234  git status
+  235  git commit -m "Added functionality so that the new button would take you back to the entry page to allow you to enter a new location. #4"
+  236  git push origin issue-4-user-can-save-locations-and-set-primary 
+  237  git status
+  238  git add index.html js/main.js
+  239  git status
+  240  git commit -m "Added better functionality so that when a user submitted a location, it would immediately add to the locations modale as well as the modale automatically loading the data.locations array. #4"
+  241  git push origin issue-4-user-can-save-locations-and-set-primary 
+  242  git status
+  243  git add js/main.js
+  244  git status
+  245  git commit -m "Made delete button functional. #4"
+  246  git push origin issue-4-user-can-save-locations-and-set-primary 
+  247  git status
+  248  git add index.html js/main.js
+  249  git status
+  250  git commit -m "Added edit button and it currently shows the preferences for that location. #4"
+  251  git add index.html js/main.js
+  252  git commit -m "Added edit button and it currently shows the preferences for that location. #4"
+  253  git push origin issue-4-user-can-save-locations-and-set-primary 
+  254  git status
+  255  git add js/main.js
+  256  git status
+  257  git commit -m "Added functionality to the primary location setter. #4"
+  258  git status
+  259  git add js/main.js
+  260  git status
+  261  git commit -m "Uploading last few changes before end of Friday. #4"
+  262  git status
+  263  git push origin issue-4-user-can-save-locations-and-set-primary 
+  264  git status
+  265  cd ~/repos/ajax-project
+  266  git branch --list
+  267  git fetch --all
+  268  git pull origin issue-4-user-can-save-locations-and-set-primary 
+  269  git status
+  270  cd ~/repos/ajax-project
+  271  git status
+  272  git add .
+  273  git status
+  274  git commit -m "Added the previews section so that it populates whenever the submit button is clicked or when a new primary location is chosen. It will reflect the preferences that the user sets for that specific location. Also changed the background so that it doesn't scroll. Also changed the box that contained the main weather data so that it would be broken up into multiple boxes for better visibility. #4"
+  275  git push origin issue-4-user-can-save-locations-and-set-primary 
+  276  git status
+  277  git add css/styles.css
+  278  git status
+  279  git commit -m "Made the edit locations modal cleaner by changing cursor and adding hover effects. #4"
+  280  git status
+  281  git add js/main.js
+  282  git status
+  283  git commit -m "Modified labels for previews of data. #4"
+  284  git push origin issue-4-user-can-save-locations-and-set-primary 
+  285  git switch master
+  286  git pull origin master
+  287  git status
+  288  git branch issue-5-user-is-greeted
+  289  git branch --list
+  290  git switch issue-5-user-is-greeted 
+  291  git status
+  292  git add .
+  293  git status
+  294  git commit -m "Added first few responses and greetings that will be chosen at randomly depending on the time of day and if it is raining or not. I plan to add additional greetings and recommendations later in the future. I also added the profile modal, and have categories for Name, Birthday, and Email. #5"
+  295  git status
+  296  git push origin issue-5-user-is-greeted 
+  297  git status
+  298  git add .
+  299  git status
+  300  git commit -m "Improved layout of the edit profile choices and button. #5"
+  301  git push origin issue-5-user-is-greeted 
+  302  git status
+  303  git add .
+  304  git status
+  305  git commit -m "Started to make changes in how the header modal interacts with itself. #5"
+  306  git commit -m "Started to make changes in how the header modal interacts with itself. #5" --no-verify
+  307  git status
+  308  git push origin issue-5-user-is-greeted 
+  309  pwd
+  310  cd ~/repos/ajax-project
+  311  git status
+  312  git add index.html js/main.js
+  313  git commit -m "Changed the functions for the header links so that it is more flexible and adaptable. #5"
+  314  git add index.html js/main.js
+  315  git commit -m "Changed the functions for the header links so that it is more flexible and adaptable. #5"
+  316  git status
+  317  git push origin issue-5-user-is-greeted 
+  318  git status
+  319  git add .
+  320  git status
+  321  git commit -m "Cleaned up CSS so that text was spaced evenly between mobile and desktop versions. #5"
+  322  git push origin issue-5-user-is-greeted 
+  323  git status
+  324  git add js/main.js
+  325  git commit -m "Changed functionality so that when user submitted a name, then the window would immediately show the user's name and personalized recommendation. #5"
+  326  git push origin issue-5-user-is-greeted 
+  327  git status
+  328  git checkout master
+  329  git pull origin master
+  330  git status
+  331  git branch html-cleanup
+  332  git switch html-cleanup
+  333  git status
+  334  git branch -m html-cleanup code-cleanup
+  335  git branch --list
+  336  git status
+  337  git add .
+  338  git commit -m "Changed clickable elements to be buttons or links"
+  339  git status
+  340  git add css/styles.css
+  341  git status
+  342  git commit -m "Removed some comments and unnecessary stylings from css"
+  343  git status
+  344  git add .
+  345  git status
+  346  git commit -m "Changed a button to a link so that the format would look cleaner"
+  347  git status
+  348  git add js/main.js
+  349  git status
+  350  git commit -m "Changed event listeners for certain buttons from click to submit"
+  351  git status
+  352  git push origin code-cleanup
+  353  git status
+  354  git checkout master
+  355  git pull origin master
+  356  cd ~/repos/ajax-project
+  357  git status
+  358  git add .
+  359  git status
+  360  git commit -m "Fixed a bug that showed up only between the times of 5 pm and 9 pm"
+  361  git add .
+  362  git commit -m "Fixed a bug that showed up only between the times of 5 pm and 9 pm"
+  363  git status
+  364  git add .
+  365  git status
+  366  git commit -m "Added minor styling changes to lists so that there are smoother transitions when hovering over certain options. Also added code so that if a primary location already existed, the default page would be to go to the primary page on refresh"
+  367  git status
+  368  git add .
+  369  git status
+  370  git commit -m "Added loading text"
+  371  git status
+  372  git add .
+  373  git status
+  374  git add js/main.js
+  375  git status
+  376  git commit -m "Modified error message code"
+  377  git status
+  378  git add js/main.js
+  379  git status
+  380  git commit -m 
+  381  git commit -m "Changed how the delete function works so that if it deletes a primary location, the primary location is changed to whatever is at the top of data.locations, and the icon for that listing is changed to primary and it is also removed from the previews list"
+  382  git status
+  383  git add css/styles.css
+  384  git commit -m "a"
+  385  git status
+  386  git restore --staged css/styles.css
+  387  git status
+  388  git restore .
+  389  git status
+  390  git add .
+  391  git status
+  392  git commit -m "Changed the way the header and the menu modal works so that it sticks to the viewport"
+  393  git status
+  394  git add .
+  395  git status
+  396  git commit -m "Changed header sizings so that it would look better when revealed."
+  397  git status
+  398  git add .
+  399  git status
+  400  git commit -m "Added some changes to make sure that mobile version had the preview and the main display boxes the same width" 
+  401  git status
+  402  git add .
+  403  git status
+  404  git commit -m "Added some transitions during hovering for better visibility on some of the previews"
+  405  git status
+  406  git push origin code-interface
+  407  git status
+  408  git switch master
+  409  git pull origin master
+  410  pwd
+  411  git remote set-url origin git@github.com:dennymin/quick-weather.git
+  412  cd ~/repos mv ajax-project quick-weather
+  413  cd ~/repos
+  414  mv ajax-project quick-weather
+  415  git status
+  416  cd ~/repos
+  417  cd /quick-weather
+  418  cd ~/repos/quick-weather
+  419  pwd
+  420  git branch --list
+  421  git branch code-polish
+  422  git status
+  423  git switch code-polish
+  424  git status
+  425  git add .
+  426  git status
+  427  git commit -m "Code polishing, added the necessary meta tags, favicon, and updated readme"
+  428  git push origin code-polish
+  429  pwd
+  430  cd ~/repos/c0621-code-solutions
+  431  git status
+  432  git branch es6-const-let
+  433  git status
+  434  git branch --list
+  435  git switch es6-const-let
+  436  git status
+  437  git add .
+  438  git status
+  439  git commit -m "Completed es6-const-let exercise. - Denny Min"
+  440  git status
+  441  git push origin es6-const-let
+  442  git status
+  443  git switch master
+  444  git pull origin master
+  445  git branch es6-template-literals
+  446  git branch --list
+  447  git switch es6-template-literals 
+  448  git status
+  449  git add es6-template-literals
+  450  git status
+  451  git commit -m "Completed es6 template literals exercise. - Denny Min"
+  452  git push origin es6-template-literals 
+  453  git switch master
+  454  git branch es6-destructuring
+  455  git branch --list
+  456  git switch es6-destructuring
+  457  git status
+  458  git add es6-destructuring
+  459  git status
+  460  git commit -m "Completed es6-destructuring exercise. - Denny Min"
+  461  git status
+  462  git push origin es6-destructuring
+  463  git switch master
+  464  git status
+  465  git pull origin master
+  466  cd ~/repos/c0621-code-solutions
+  467  git fetch --all
+  468  git pull origin es6-arrow-functions
+  469  git switch es6-arrow-functions 
+  470  git status
+  471  git switch master
+  472  git branch command-line-basics
+  473  git switch command-line-basics
+  474  git status
+  475  cd command-line-basics
+  476  pwd
+  477  man man
+  478  man cat
+  479  cat laziness.txt
+  480  cat impatience.txt
+  481  cat hubris.txt
+  482  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  483  cat three-virtues-txt
+  484  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  485  cat three-virtues-txt
+  486  cat hubris.txt
+  487  cat laziness.txt impatience.txt hubris.txt
+  488  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  489  cat three-virtues.txt
+  490  man ls
+  491  ls
+  492  ls -a
+  493  ls -F
+  494  man ls
+  495  ls lfz-staff/
+  496  ls lfz-staff/ -a
+  497  ls lfz-staff/ -F
+  498  ls -aF lfz-staff > lfz-staff/contents.txt
+  499  cat lfz-staff/contents.txt
+  500  man pwd
+  501  pwd
+  502  pwd > i-was-here.txt
+  503  ls
+  504  cat i-was-here.txt
+  505  man echo
+  506  echo 'Hello, World!'
+  507  echo 'Hello, World!' > hello.txt
+  508  ls
+  509  cat hello.txt
+  510  man touch
+  511  touch tag-youre-it.txt
+  512  man touch
+  513  man ls
+  514  touch snoot/boop.txt
+  515  ls snoot/
+  516  man mkdir
+  517  mkdir parent
+  518  ls parent
+  519  ls parent/
+  520  ls
+  521  man mkdir
+  522  mkdir -p parent/ child
+  523  mkdir -p parent child
+  524  mkdir -p child
+  525  man mkdir
+  526  man man
+  527  mkdir child
+  528  mkdir child -p parent
+  529  mkdir -p parent/child
+  530  mkdir -p parent/child/grandchild
+  531  touch parent/gitkeep
+  532  touch parent/child/gitkeep
+  533  touch parent/child/grandchild/gitkeep
+  534  ls -a
+  535  ls -a parent
+  536  ls -a child
+  537  ls -a parent/child
+  538  ls -a parent/child/grandchild
+  539  man mv
+  540  mv pokiemans/ pokemon/
+  541  ls pokemon
+  542  man rm
+  543  rm lol.txt
+  544  ls
+  545  rm -r kill-me
+  546  ls
+  547  man cp
+  548  ls
+  549  man cp
+  550  cp and-then.txt no-and-then.txt
+  551  ls
+  552  cat and-then.txt
+  553  cat no-and-then.txt
+  554  man history
+  555  history
+  556  history > command-history.txt
