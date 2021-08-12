@@ -8,11 +8,9 @@ function readThis() {
       if (err) {
         console.log('there was an error');
       } else {
-        if (counter < process.argv.length) {
-          console.log(data);
-          counter++;
-          readThis();
-        }
+        console.log(data);
+        counter++;
+        readThis();
       }
     }
   });
