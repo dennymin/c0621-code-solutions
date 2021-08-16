@@ -29,13 +29,8 @@ app.get('/api/grades', (req, res) => {
 });
 
 app.delete('/api/grades/:id', (req, res) => {
-  const removeThis = req.params;
-
-  for (const key in grades) {
-    if (removeThis.id.toString() === grades[key].id.toString()) {
-      delete grades[key];
-    }
-  }
+  const id = req.params.id;
+  delete grades[id];
   res.sendStatus(204);
 });
 
