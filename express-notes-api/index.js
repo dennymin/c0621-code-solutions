@@ -68,7 +68,7 @@ app.delete('/api/notes/:id', (req, res) => {
       const transferData = JSON.stringify(data, null, 2);
       fs.writeFile('./data.json', transferData, err => {
         if (err) {
-          res.send(500).json({ error: errorMsg.unexpected });
+          res.status(500).json({ error: errorMsg.unexpected });
         } else {
           res.status(204).json();
         }
@@ -92,7 +92,7 @@ app.put('/api/notes/:id', (req, res) => {
     const transferData = JSON.stringify(data, null, 2);
     fs.writeFile('./data.json', transferData, err => {
       if (err) {
-        res.send(500).json({ error: errorMsg.unexpected });
+        res.status(500).json({ error: errorMsg.unexpected });
       } else {
         res.status(200).json(data.notes[id]);
       }
