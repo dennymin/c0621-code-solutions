@@ -56,7 +56,7 @@ app.post('/api/grades', (req, res) => {
   `
   , params)
     .then(result => {
-      res.status(200).json(result.rows[0]);
+      res.status(201).json(result.rows[0]);
     })
     .catch(() => {
       res.status(500).json({ error: errorMsg.unexpected });
@@ -94,6 +94,7 @@ app.delete('/api/grades/:gradeId', (req, res) => {
   const queryGradeId = parseInt(req.params.gradeId, 10);
   if (Number.isNaN(queryGradeId) || queryGradeId < 0) {
     res.status(400).json({ error: errorMsg.invalid });
+    return;
   }
   db.query(`
   delete from "grades"
