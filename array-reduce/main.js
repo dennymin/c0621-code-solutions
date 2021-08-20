@@ -35,7 +35,7 @@ const composite = (prev, curr) => { return Object.assign(prev, curr); };
 console.log(numbers.reduce(sum));
 console.log(numbers.reduce(product));
 console.log(account.reduce(balance, 0));
-console.log(traits.reduce(composite));
+console.log(traits.reduce(composite, {}));
 
 // const balance = (prev, curr) => {
 //   let value = 0;

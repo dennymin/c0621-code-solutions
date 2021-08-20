@@ -12,4 +12,6 @@
 // }
 // const test = [1, 2, 3, 4];
 
-// console.log(reduce(test, ()));
+// console.log(reduce(test, (prev, curr) => {
+//   return prev + curr;
+// }));
