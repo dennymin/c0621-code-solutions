@@ -1,0 +1,36 @@
+button {
+  border: 1px solid black;
+  box-shadow: 3px 3px black;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.white-text {
+  color: white;
+}
+
+.white-background {
+  background-color: white;
+}
+
+.yellow-background {
+  background-color: yellow;
+}
+
+.orange-background {
+  background-color: orange;
+}
+
+.red-background {
+  background-color: red;
+}
+
+.purple-background {
+  background-color: purple;
+}
+
+.dark-background {
+  background-color: rgb(93, 86, 149);
+}
