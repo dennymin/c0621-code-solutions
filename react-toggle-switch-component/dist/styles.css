@@ -1,0 +1,38 @@
+.circle {
+  border: 1px solid black;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  background-color: white;
+}
+
+.switch {
+  border: 1px solid black;
+  width: 65px;
+  height: 27px;
+  border-radius: 15px;
+}
+
+.on-position {
+  left: 39px;
+}
+
+.on-background {
+  background-color: green;
+}
+
+.off-background {
+  background-color: grey;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+h1 {
+  position: relative;
+  left: 20px;
+}
