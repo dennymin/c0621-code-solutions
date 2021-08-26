@@ -15,23 +15,21 @@ export default class Drawer extends React.Component {
   }
 
   hideDrawer(e) {
-    if (e.target.className === 'target-link' || (e.target.className === 'page-container full-vp transparent-background-color')) {
+    if (e.target.className.includes('link') || (e.target.className.includes('page-container'))) {
       this.setState({ burgerClicked: false });
     }
   }
 
   render() {
-    let burgerClass = null;
+    const burgerClass = 'fas fa-bars';
     let menuClass = null;
     let pageClass = null;
     if (this.state.burgerClicked === true) {
-      burgerClass = 'hidden';
-      menuClass = 'drawer white-background-color';
-      pageClass = 'page-container full-vp transparent-background-color';
+      menuClass = 'drawer white-background-color drawer-reveal';
+      pageClass = 'page-container full-vp background-pepe transparent-background-color';
     } else if (this.state.burgerClicked === false) {
-      burgerClass = 'fas fa-bars';
-      menuClass = 'drawer white-background-color hidden';
-      pageClass = 'page-container full-vp white-background-color';
+      menuClass = 'drawer white-background-color';
+      pageClass = 'page-container full-vp white-background-color background-pepe';
     }
     return (
       <div onClick={this.hideDrawer} className={pageClass}>
