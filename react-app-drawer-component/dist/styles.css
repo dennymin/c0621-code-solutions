@@ -2,9 +2,9 @@ body {
   font-family: monospace;
 }
 
-/* .background-pepe {
+.background-pepe {
   background-image: url(bulbasaur.png);
-} */
+}
 
 .page-container {
   width: 100vw;
@@ -60,6 +60,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 i {

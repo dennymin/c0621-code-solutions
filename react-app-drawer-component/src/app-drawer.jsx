@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 
 export default class Drawer extends React.Component {
   constructor(props) {
@@ -26,15 +26,15 @@ export default class Drawer extends React.Component {
     let pageClass = null;
     if (this.state.burgerClicked === true) {
       menuClass = 'drawer white-background-color drawer-reveal';
-      pageClass = 'page-container full-vp background-pepe transparent-background-color';
+      pageClass = 'page-container full-vp transparent-background-color';
     } else if (this.state.burgerClicked === false) {
       menuClass = 'drawer white-background-color';
-      pageClass = 'page-container full-vp white-background-color background-pepe';
+      pageClass = 'page-container full-vp';
     }
     return (
-      <div onClick={this.hideDrawer} className={pageClass}>
+      <div className='background-pepe full-vp'>
+        <div onClick={this.hideDrawer} className={pageClass}>
         <i onClick={this.showDrawer} className={burgerClass}></i>
-
         <div className={menuClass}>
           <div>
             <h1>Menu</h1>
@@ -48,6 +48,7 @@ export default class Drawer extends React.Component {
           <div className="align-items-center link">
             <a className="target-link">Sign In</a>
           </div>
+        </div>
         </div>
       </div>
     );
