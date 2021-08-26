@@ -5,6 +5,7 @@
   border-radius: 50%;
   position: relative;
   background-color: white;
+  transition: transform 0.2s;
 }
 
 .switch {
@@ -15,7 +16,7 @@
 }
 
 .on-position {
-  left: 39px;
+  transform: translateX(39px);
 }
 
 .on-background {
