@@ -1,0 +1,43 @@
+.image-container {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.relative-position-right20px {
+  position: relative;
+  right: 20px;
+}
+
+.relative-position-left20px {
+  position: relative;
+  left: 20px;
+}
+
+.fa-arrow-right:active,
+.fa-arrow-left:active {
+  transform: translateY(1px);
+}
+
+.fa-arrow-right:hover,
+.fa-arrow-left:hover {
+  cursor: pointer;
+}
