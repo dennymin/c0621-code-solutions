@@ -4,7 +4,7 @@ export default class Validate extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
       current: '',
       valid: null
@@ -13,16 +13,21 @@ export default class Validate extends React.Component {
 
   handleChange(event) {
     this.setState({ current: event.target.value });
-  }
-
-  handleSubmit(event) {
-    event.preventDefault();
     if (this.state.current.length < 8) {
       this.setState({ valid: false });
     } else if (this.state.current.length >= 8) {
       this.setState({ valid: true });
     }
   }
+
+  // handleSubmit(event) {
+  //   event.preventDefault();
+  //   if (this.state.current.length < 8) {
+  //     this.setState({ valid: false });
+  //   } else if (this.state.current.length >= 8) {
+  //     this.setState({ valid: true });
+  //   }
+  // }
 
   render() {
     let passwordResponseClass = '';
@@ -46,7 +51,6 @@ export default class Validate extends React.Component {
     return (
       <div className="flex-wrap">
         <form
-        onSubmit={this.handleSubmit}
         className="flex-wrap align-items-center">
           <label htmlFor="password" className="flex-basis-100">
             Password
