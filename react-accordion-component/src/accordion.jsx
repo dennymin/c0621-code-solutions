@@ -4,7 +4,6 @@ export default class Accordion extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.generateList = this.generateList.bind(this);
-    // this.generateIndex = this.generateIndex.bind(this);
     this.state = {
       reveal: false,
       focused: null
@@ -28,10 +27,6 @@ export default class Accordion extends React.Component {
       event.target.nextSibling.className = 'info-body hidden';
       this.setState({ reveal: false, focused: null });
     }
-    // else if (this.state.reveal === true && this.state.focused !== null) {
-    //   event.target.nextSibling.className = 'info-body hidden';
-    //   this.setState({ reveal: false });
-    // }
   }
 
   generateList(props) {
@@ -46,18 +41,6 @@ export default class Accordion extends React.Component {
       topicsList
     );
   }
-
-  // generateIndex() {
-  //   const indexes = [];
-  //   for (let i = 0; i < this.information.length; i++) {
-  //     const entry = {
-  //       index: this.information.number,
-  //       reveal: false
-  //     };
-  //     indexes.push(entry);
-  //   }
-  //   this.setState({ arr: indexes });
-  // }
 
   render() {
     return (
