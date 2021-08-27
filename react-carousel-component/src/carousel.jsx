@@ -5,6 +5,7 @@ export default class Carousel extends React.Component {
     super(props);
     this.pictures = this.props.images;
     this.handleClick = this.handleClick.bind(this);
+    this.startInterval = this.startInterval.bind(this);
     this.state = {
       viewing: 1,
       timer: null
@@ -19,7 +20,7 @@ export default class Carousel extends React.Component {
       }
       clearInterval(this.state.timer);
       this.setState({ viewing: rotateRight });
-      this.componentDidMount();
+      this.startInterval();
     } else if (event.target.className.includes('fa-arrow-left')) {
       let rotateLeft = this.state.viewing - 1;
       if (rotateLeft < 1) {
@@ -27,11 +28,11 @@ export default class Carousel extends React.Component {
       }
       clearInterval(this.state.timer);
       this.setState({ viewing: rotateLeft });
-      this.componentDidMount();
+      this.startInterval();
     }
   }
 
-  componentDidMount() {
+  startInterval() {
     const regularInt = setInterval(() => {
       let delay = this.state.viewing + 1;
       if (delay > this.pictures.length) {
@@ -40,6 +41,10 @@ export default class Carousel extends React.Component {
       this.setState({ viewing: delay });
     }, 3000);
     this.setState({ timer: regularInt });
+  }
+
+  componentDidMount() {
+    this.startInterval();
   }
 
   render() {
