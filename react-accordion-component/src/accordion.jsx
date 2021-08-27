@@ -3,48 +3,33 @@ export default class Accordion extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-    this.generateList = this.generateList.bind(this);
     this.state = {
-      reveal: false,
-      focused: null
+      openIndex: null
     };
     this.information = this.props.topics;
   }
 
   handleClick(event) {
-    const difTopics = event.target.parentElement.parentElement.children;
     if (event.target.className.includes('info-title')) {
-      this.setState({ reveal: true, focused: event.target.getAttribute('data-index') });
-      for (let i = 0; i < difTopics.length; i++) {
-        if (difTopics[i].getAttribute('data-index') === event.target.getAttribute('data-index')) {
-          difTopics[i].children[1].className = 'info-body';
-        } else {
-          difTopics[i].children[1].className = 'info-body hidden';
-        }
-      }
+      this.setState({ openIndex: event.target.getAttribute('data-index') });
     }
-    if (this.state.reveal === true && this.state.focused === event.target.getAttribute('data-index')) {
-      event.target.nextSibling.className = 'info-body hidden';
-      this.setState({ reveal: false, focused: null });
+    if (this.state.openIndex === event.target.getAttribute('data-index')) {
+      this.setState({ openIndex: null });
     }
   }
 
-  generateList(props) {
+  render() {
+    const currentView = 'info-body';
+    const hiddenView = 'info-body hidden';
     const topics = this.information;
     const topicsList = topics.map(topic =>
       <div key={topic.number} data-index={topic.number}>
         <h3 className='info-title' onClick={this.handleClick} data-index={topic.number}>{topic.name}</h3>
-        <div className='info-body hidden'>{topic.description}</div>
+        <div className={this.state.openIndex === topic.number.toString() ? currentView : hiddenView}>{topic.description}</div>
       </div>
     );
     return (
       topicsList
-    );
-  }
-
-  render() {
-    return (
-      < this.generateList></this.generateList>
     );
   }
 }
