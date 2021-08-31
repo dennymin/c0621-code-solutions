@@ -73,34 +73,27 @@ export default class App extends React.Component {
      * TIP: Be sure to SERIALIZE the updates in the body with JSON.stringify()
      * And specify the "Content-Type" header as "application/json"
      */
-    let updatedTodo = null;
-    let chosenIndex = 0;
+    let selectedIndex = 0;
     for (let i = 0; i < this.state.todos.length; i++) {
       if (this.state.todos[i].todoId === todoId) {
-        chosenIndex = i;
-        // Object.assign(updatedTodo, this.state.todos[i]);
-        // if (updatedTodo.isCompleted === false) {
-        //   updatedTodo.isCompleted = true;
-        // } else {
-        //   updatedTodo.isCompleted = false;
-        // }
-        updatedTodo = { isComplete: !this.state.todos[i].isComplete };
+        selectedIndex = i;
       }
     }
-    console.log(updatedTodo);
+    const oppStatus = (
+      this.state.todos[selectedIndex].isCompleted
+        ? { isCompleted: false }
+        : { isCompleted: true });
     fetch(`/api/todos/${todoId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(updatedTodo)
-    })
-      .then(res => res.json())
+      body: JSON.stringify(oppStatus)
+    }).then(res => res.json())
       .then(data => {
-        const placeholder = [];
-        const updatedArr = Object.assign(placeholder, this.state.todos);
-        updatedArr[chosenIndex] = updatedArr;
-        this.setState({ todos: updatedArr });
+        const updatedArray = this.state.todos.concat();
+        updatedArray.splice(selectedIndex, 1, data);
+        this.setState({ todos: updatedArray });
       });
   }
 
