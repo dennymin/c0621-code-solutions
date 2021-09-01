@@ -82,8 +82,11 @@ app.post('/api/auth/sign-in', (req, res, next) => {
           .then(isMatching => {
             const payload = { userId: result.rows[0].userId, userName: username };
             const token = jwt.sign(payload, process.env.TOKEN_SECRET);
-            const reward = [payload, token];
-            res.status(200).json(reward);
+            const user = {
+              token: token,
+              user: payload
+            };
+            res.status(200).json(user);
           }).catch(err => console.error(err));
       }
     }).catch(err => next(err));
