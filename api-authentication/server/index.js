@@ -80,7 +80,7 @@ app.post('/api/auth/sign-in', (req, res, next) => {
       } else {
         argon2.verify(result.rows[0].hashedPassword, password)
           .then(isMatching => {
-            const payload = { userId: result.rows[0].userId, userName: username };
+            const payload = { userId: result.rows[0].userId, username: username };
             const token = jwt.sign(payload, process.env.TOKEN_SECRET);
             const user = {
               token: token,
