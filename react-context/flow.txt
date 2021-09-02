@@ -1,0 +1,16 @@
+For each feature in the application, describe the flow of the code in writing, including the client, server, and database. How does the code work?
+
+
+When the app first loads, several things must happen and then happen based on user input. For things to start off, we need the server to be started, so we turn that on. When the user goes to the correct URL, the app first runs it's constructor method and then runs the render function. It runs AppContext with children of Navbar and PageContainer, which has a children that runs its renderPage method that brings up the authentication page by running the Auth module.
+
+User can sign up:
+The user needs to click on the sign-up button. This will change the hash and take the user to the sign up page. This changes how the AuthPage is rendered, which checks the route path to see if it is sign in. If it is not, it takes the user to the registration page. When the user signs up to register, they need to put in a username and password. After inputting those details, their pressing of the submit button will cause the client to send a request to the server to post to /api/auth/sign-up. When the server receives this post request, it will check that a username and password were submitted and then hand out an error if not given. If they are given, then the server will hash the password and store the username and hashedPassword in the database along where userId and createdAt are also added. What is returned is the userId, username, and createdAt. The client receives a 201 message with the resulting object. They are then taken back to the sign in page as the hash changes again to that of the sign in page.
+
+User can sign in:
+When the user signs in, they need to input a correct username and password. When they click on submit, this sends a post request to the /api/auth/sign-in url if they are on the sign in page. If they are, then the  server checks if they had put in a valid username and password. If they do not have a username or password, an error is kicked out to them. If they do have them, then the server will scour the database for the userID and hashed password using the username as a guide. Once the server completes the search and returns the results, A few things may happen. If there are no matching credentials found, then the user receives a 401 error message. If the user put in valid credentials, then the password is checked against the hashed password that the server retrieved from the database. If it does not match, then the server gives the client a 401 error message again. If the password that they inputted matches the hashed password that is stored, then they are able to sign in and receive a token and the payload which contains the userId and username.
+
+User can stay signed in (even if they refresh the page):
+The componentDidMount method of the App object will check to see if there is a token in the localstorage. If there is, then decodeToken is called and the value of the payload is assigned to the const variable user, allowing the user to stay signed in regardless of page refresh or not.
+
+User can sign out:
+When the user signs out, the token is removed from local storage, and the user property of the state object is set to null. This will take the user back out to the sign in page.
