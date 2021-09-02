@@ -1,0 +1,16 @@
+For each feature in the application, describe the flow of the code in writing, including the client, server, and database. How does the code work?
+
+
+When the app first loads, several things must happen and then happen based on user input. For things to start off, we need the server to be started, so we turn that on.
+
+User can sign up:
+When the user signs up to register, they need to put in a username and password. Their pressing of the submit button will cause the client to send a request to the server to post to /api/auth/sign-up. When the server receives this post request, it will check for a username and password and hand out an error if not given. If they are given, then the server will hash the password and store the username and hashedPassword in the database along where userId and createdAt are also added. What is returned is the userId, username, and createdAt. The client receives a 201 message with the resulting object.
+
+User can sign in:
+When the user signs in, they need to input a correct username and password. When they click on submit, this sends a post request to the /api/auth/sign-in url if they are on the sign in page. If they do not have a username or password, an error is kicked out to them. If they do have them, then the server will scour the database for the userID and hashed password using the username as a guide. Once it finds them, if nothing comes back, then a 401 is kicked out again. If the password that they inputted matches the hashed password that is stored, then they are able to sign in and receive a token and the payload which contains the userId and username.
+
+User can stay signed in (even if they refresh the page):
+When the page is first loaded, there will be a hashchange event listener on the window. The componentDidMount method of the App object will check to see if there is a token in the localstorage. If there is, then decodeToken is called and the value of the payload is assigned to the const variable user, allowing the user to stay signed in regardless of page refresh or not. 
+
+User can sign out:
+When the user signs out, the token is removed from local storage, and the user property of the state object is set to null. 
