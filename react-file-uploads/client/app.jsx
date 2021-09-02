@@ -16,6 +16,16 @@ export default class App extends React.Component {
      * - reset the form
      * - catch any promise rejection
      */
+    event.preventDefault();
+    const newForm = new FormData(event.target);
+    fetch('/api/uploads', {
+      method: 'POST',
+      body: newForm
+    })
+      .then(response => {
+        console.log(response);
+        event.target.reset();
+      });
   }
 
   render() {
