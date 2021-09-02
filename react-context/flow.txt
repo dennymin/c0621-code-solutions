@@ -10,7 +10,7 @@ User can sign in:
 When the user signs in, they need to input a correct username and password. When they click on submit, this sends a post request to the /api/auth/sign-in url if they are on the sign in page. If they do not have a username or password, an error is kicked out to them. If they do have them, then the server will scour the database for the userID and hashed password using the username as a guide. Once it finds them, if nothing comes back, then a 401 is kicked out again. If the password that they inputted matches the hashed password that is stored, then they are able to sign in and receive a token and the payload which contains the userId and username.
 
 User can stay signed in (even if they refresh the page):
-When the page is first loaded, there will be a hashchange event listener on the window. The componentDidMount method of the App object will check to see if there is a token in the localstorage. If there is, then decodeToken is called and the value of the payload is assigned to the const variable user, allowing the user to stay signed in regardless of page refresh or not. 
+When the page is first loaded, there will be a hashchange event listener on the window. The componentDidMount method of the App object will check to see if there is a token in the localstorage. If there is, then decodeToken is called and the value of the payload is assigned to the const variable user, allowing the user to stay signed in regardless of page refresh or not.
 
 User can sign out:
-When the user signs out, the token is removed from local storage, and the user property of the state object is set to null. 
+When the user signs out, the token is removed from local storage, and the user property of the state object is set to null. This will take the user back out to the sign in page.
