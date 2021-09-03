@@ -1,10 +1,10 @@
 function graduate(credential) {
   return function (fullName) {
-    console.log(`${fullName}, ${credential}`);
+    return (`${fullName}, ${credential}`);
   };
 }
 
 var medicalSchool = graduate('M.D.');
 var lawSchool = graduate('Esq.');
-medicalSchool('Denny Min');
-lawSchool('Paulerbear Park');
+console.log(medicalSchool('Denny Min'));
+console.log(lawSchool('Paulerbear Park'));
