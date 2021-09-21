@@ -18,6 +18,12 @@ export default class App extends React.Component {
      */
     event.preventDefault();
     const newForm = new FormData(event.target);
+    for (const value of newForm.keys()) {
+      console.log(typeof value, value);
+    }
+    for (const value of newForm.values()) {
+      console.log(typeof value, value);
+    }
     fetch('/api/uploads', {
       method: 'POST',
       body: newForm
